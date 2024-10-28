@@ -1,0 +1,120 @@
+
+ul{
+    margin-top: 30px;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    padding: 0px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    height: auto;
+    color: gray;
+    padding: 5px;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+border-radius: 10px;
+margin: 10px 0px;
+word-break: break-all;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.filters{
+  display: flex;
+}
+
+.btn-filter{
+  border-radius: 5px;
+  margin: 10px 10px 0px 0px;
+  background-color: #FFF6E3;
+  color: rgb(107, 106, 106);
+}
+
+button.active {
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+span{
+    color: gray;
+}
+
+.task-text{
+    width: 100%;
+    text-align: center;
+}
+
+.error {
+    color: rgb(207, 58, 58);
+    font-size: 0.9rem;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .task-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .edit-container {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  .edit-container input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    transition: border-color 0.1s;
+    background-color: transparent;
+    border-radius: 5px;
+    color: gray;
+  }
+  
+  .edit-container input:focus {
+    border-bottom-color: #FFF6E3;
+  }
+
+ .completed {
+   background-color: #FFF6E3;
+   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.46);
+    -moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.46);
+    box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.46);
+    padding: 5px 5px 5px 10px;
+  }
+
+  .cross-text{
+   text-decoration:line-through;
+  }
+  
+
+@media (max-width:450px){
+
+    li{
+        width: 100%;
+    }
+}

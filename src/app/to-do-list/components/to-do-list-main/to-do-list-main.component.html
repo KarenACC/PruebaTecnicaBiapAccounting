@@ -1,0 +1,7 @@
+<app-add-task (addNewTask)="onNewTask($event)"></app-add-task>
+
+<app-tasks-list [taskList]="tasks"
+                (onDeleteTask)="onDeleteTask($event)"
+                (onCompleteTask)="onCompleteTask($event)"
+                (onEditTask)="onUpdateTask($event)"
+></app-tasks-list>

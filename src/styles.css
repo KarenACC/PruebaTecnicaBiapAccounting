@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    box-sizing: border-box;
+    background: rgb(191,236,255);
+    background: linear-gradient(0deg, rgba(191,236,255,1) 0%, rgba(205,193,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 30px 20px;
+}
